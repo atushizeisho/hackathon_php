@@ -14,7 +14,7 @@ EC2のみで完結するApache + MySQL + PHPな構成を想定しています。
 
 ## EC2でサーバを立ち上げよう
 
-VPS構成で作るため、手順がすごく多いです…！挫けず頑張りましょう。
+VPC構成で作るため、手順がすごく多いです…！挫けず頑張りましょう。
 
 ### Step1
 
@@ -123,7 +123,7 @@ Valueに自分たちのサーバ名だと分かるように名前を入力して
 
 ![](https://raw.githubusercontent.com/basicinc/hackathon_php/master/aws_17.png)
 
-次にRoute Tableメニューを開きます。作成した自身のVPSのルートテーブルを選択します。下の詳細メニューにある「Routes」タブを開き、「Add another route」を押下しデフォルトゲートウェイを紐付けます。
+次にRoute Tableメニューを開きます。作成した自身のVPCのルートテーブルを選択します。下の詳細メニューにある「Routes」タブを開き、「Add another route」を押下しデフォルトゲートウェイを紐付けます。
 
 - Destination : 0.0.0.0/0
 - Target : クリックすると、ゲートウェイの選択肢が出ると思います
